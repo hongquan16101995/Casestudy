@@ -1,7 +1,3 @@
-const DEFAULT_ROW = 2;
-const DEFAULT_COL = 3;
-
-
 let hondaClass = function(image, price, name){
     this.image = image;
     this.price = price;
@@ -10,11 +6,12 @@ let hondaClass = function(image, price, name){
 
 function ShowElement (array){
     let content = "<table>";
-    for (let i=0;i<DEFAULT_ROW;i++){
+    for (let i=0;i<array.length;i++){
         content += "<tr>";
-        for (let j=0;j<DEFAULT_COL;j++){
+        for (let j=0;j<array[i].length;j++){
             content += "<td><img  alt='Lỗi' src=" + array[i][j].image + "><h2>" + array[i][j].name +
-                "</h2><p>Giá: " + array[i][j].price + " VND</p>" + "</td>"
+                "</h2><p>Giá: " + array[i][j].price + " VND</p>" +
+                "<button>&nbsp;Sửa&nbsp;</button>" + "&emsp;" + "<button>&nbsp;Xóa&nbsp;</button>" + "</td>"
         }
         content += "<tr>"
     }
@@ -35,18 +32,7 @@ let car6 = new hondaClass("../car_moto/car6.png", 1319000000, "ACCORD");
 let arrayCar = [[car1,car2,car3],[car4,car5,car6]];
 
 function showCar() {
-    let content = "<table>";
-    for (let i=0;i<DEFAULT_ROW;i++){
-        content += "<tr>";
-        for (let j=0;j<DEFAULT_COL;j++){
-            content += "<td><img  alt='Lỗi' src=" + arrayCar[i][j].image + "><h2>" + arrayCar[i][j].name +
-                "</h2><p>Giá: " + arrayCar[i][j].price + " VND</p>" +
-                "<button><a href='../HTML/registration.html'>&emsp;Đăng ký lái thử&emsp;</a></button></td>"
-        }
-        content += "</tr>"
-    }
-    content += "</table>"
-    document.getElementById("displayElement").innerHTML = content
+    ShowElement(arrayCar)
 }
 
 

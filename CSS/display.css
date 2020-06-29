@@ -7,6 +7,7 @@ body{
     color: #d3d3d3;
 }
 #heater {
+    font-family: sans-serif;
     width: 1520px;
     height: 150px;
     position: relative;
@@ -14,6 +15,12 @@ body{
 #logo {
     float: left;
     position: absolute;
+}
+#admin {
+    float: right;
+    position: relative;
+    padding: 20px 20px;
+    color: black;
 }
 #heater a {
     float: right;
@@ -26,6 +33,7 @@ body{
     text-decoration: underline;
 }
 #menu {
+    font-family: sans-serif;
     width: 1520px;
 }
 #menu ul {

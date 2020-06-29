@@ -24,7 +24,7 @@ let a = "<h2>HONDA VIỆT NAM – Công ty hàng đầu Việt Nam trong lĩnh v
     "<p>Vốn đầu tư: Khoảng 60 triệu USD</p>" +
     "<p>Công suất: 10.000 xe/năm</p>" +
     "<p>Diện tích: 30.000m2</p>" +
-    "<p>Tìm hiểu thêm các thông tin chi tiết của Honda Ô tô Việt Nam, vui lòng truy cập " +
+    "<p>Tìm hiểu thêm các thông tin chi tiết của Honda Việt Nam, vui lòng truy cập " +
     "website: <a href='https://www.honda.com.vn/' target='_blank' style='text-decoration: underline'>www.honda.com.vn</a></p>" +
     "<p>Trân trọng cảm ơn!</p>"
 

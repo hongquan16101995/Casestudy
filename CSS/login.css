@@ -5,12 +5,13 @@
 #container {
     width: 700px;
     height: 180px;
+    border: 2px solid blue;
+    margin: auto 0;
 }
 #logo {
     width: 300px;
     height: 100%;
     float: left;
-    border: 1px solid red;
 }
 #login {
     width: 400px;
