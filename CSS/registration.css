@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#table {
+    width: 420px;
+    height: 420px;
+    padding: 8px;
+    border: 2px solid blue;
+}
+#table tr td {
+    text-align: left;
+}

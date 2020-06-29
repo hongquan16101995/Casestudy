@@ -2,7 +2,6 @@ const DEFAULT_ROW = 2;
 const DEFAULT_COL = 3;
 
 
-
 let hondaClass = function(image, price, name){
     this.image = image;
     this.price = price;
@@ -14,7 +13,8 @@ function ShowElement (array){
     for (let i=0;i<DEFAULT_ROW;i++){
         content += "<tr>";
         for (let j=0;j<DEFAULT_COL;j++){
-            content += "<td><img  alt='Lỗi' src=" + array[i][j].image + "><h2>" + array[i][j].name + "</h2><p>Giá: " + array[i][j].price + " VND</p>" + "</td>"
+            content += "<td><img  alt='Lỗi' src=" + array[i][j].image + "><h2>" + array[i][j].name +
+                "</h2><p>Giá: " + array[i][j].price + " VND</p>" + "</td>"
         }
         content += "<tr>"
     }
@@ -39,19 +39,15 @@ function showCar() {
     for (let i=0;i<DEFAULT_ROW;i++){
         content += "<tr>";
         for (let j=0;j<DEFAULT_COL;j++){
-            content += "<td><img  alt='Lỗi' src=" + arrayCar[i][j].image + "><h2>" + arrayCar[i][j].name + "</h2><p>Giá: " + arrayCar[i][j].price + " VND</p>" +
-                "<button onclick='testDrive()'>Đăng ký lái thử</button></td>"
+            content += "<td><img  alt='Lỗi' src=" + arrayCar[i][j].image + "><h2>" + arrayCar[i][j].name +
+                "</h2><p>Giá: " + arrayCar[i][j].price + " VND</p>" +
+                "<button><a href='registration.html'>&emsp;Đăng ký lái thử&emsp;</a></button></td>"
         }
         content += "</tr>"
     }
     content += "</table>"
     document.getElementById("displayElement").innerHTML = content
 }
-
-//lái thử
- function testDrive() {
-    alert("alo")``
- }
 
 
 //list xe ga
@@ -94,5 +90,4 @@ function showMotorbike() {
     ShowElement(arrayMotorbike)
 }
 
-function start() {
-}
+

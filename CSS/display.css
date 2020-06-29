@@ -9,9 +9,21 @@ body{
 #heater {
     width: 1520px;
     height: 150px;
+    position: relative;
+}
+#logo {
+    float: left;
+    position: absolute;
 }
 #heater a {
     float: right;
+    position: relative;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: blue;
+}
+#heater a:hover {
+    text-decoration: underline;
 }
 #menu {
     width: 1520px;
@@ -32,6 +44,7 @@ body{
 #menu ul li button {
     color: black;
     display: block;
+    font-size: 15px;
 }
 #menu ul li button:hover {
     background: #dddddd;
@@ -62,21 +75,28 @@ body{
     height: 100%;
 }
  #displayElement {
+     font-family: sans-serif;
      float: right;
      width: 75%;
      height: 100%;
-     padding: 20px;
+     padding: 10px 30px;
+     color: black;
  }
-
+ #displayElement a {
+     text-decoration: none;
+     color: blue;
+ }
  #footer {
      width: 1520px;
-     height: 100px;
+     height: 120px;
      text-align: center;
      background: antiquewhite;
      font-size: 15px;
+     position: relative;
  }
  #footer p {
-     margin: 10px;
+     margin: 5px;
      font-family: sans-serif;
      color: black;
+     padding: 5px;
  }
