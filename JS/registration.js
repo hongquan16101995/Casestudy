@@ -7,18 +7,38 @@ function validateForm() {
     if (user === "" || user === null) {
         alert("Bạn cần phải nhập thông tin đầy đủ và chính xác!");
         return false;
-    }else if (phone === "" || phone === null) {
+    } else if (phone === "" || phone === null) {
         alert("Bạn cần phải nhập thông tin đầy đủ và chính xác!");
         return false;
-    }else if (address === "" || address === null) {
+    } else if (address === "" || address === null) {
         alert("Bạn cần phải nhập thông tin đầy đủ và chính xác!");
         return false;
-    }else if (date === "" || date === null) {
+    } else if (date === "" || date === null) {
         alert("Bạn cần phải nhập thông tin đầy đủ và chính xác!");
         return false;
-    }else if (selectCar === "" || selectCar === null) {
+    } else if (selectCar === "" || selectCar === null) {
         alert("Bạn cần phải nhập thông tin đầy đủ và chính xác!");
         return false;
-    }else
+    } else
         alert("Bạn đã đăng ký thành công!")
 }
+
+
+function getLocal() {
+    localStorage.User = document.getElementById("user").value;
+    localStorage.Phonenumber = document.getElementById("phone").value;
+    localStorage.Address = document.getElementById("address").value;
+    localStorage.Date = document.getElementById("date").value;
+    let select = document.getElementById("selectCar").value;
+    for (let i=0;i<select.length;i++){
+        if (select[i].selected){
+            localStorage.SelectCar = select[i].value
+        }
+    }
+}
+
+localStorage.getItem("User");
+localStorage.getItem("Phonenumber");
+localStorage.getItem("Address");
+localStorage.getItem("Date");
+localStorage.getItem("SelectCar");
