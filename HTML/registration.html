@@ -7,31 +7,31 @@
 </head>
 <body>
 <div id="container">
-    <form>
+    <form action="display.html" method="post" onsubmit="return validateForm()">
         <table id="table">
             <tr>
                 <td colspan="2"><h2>ĐĂNG KÝ LÁI THỬ XE</h2></td>
             </tr>
             <tr>
                 <td>Họ và tên : </td>
-                <td><label><input type="text" name="name" size="30" maxlength="30"></label></td>
+                <td><label><input type="text" name="name" size="25" maxlength="30" id="user"></label></td>
             </tr>
             <tr>
                 <td>Số điện thoại : </td>
-                <td><label><input type="text" name="phone" size="20" maxlength="11"></label></td>
+                <td><label><input type="text" name="phone" size="20" maxlength="11" id="phone"></label></td>
             </tr>
             <tr>
                 <td>Địa chỉ:</td>
-                <td><label><textarea name="address" style="width: 220px;height: 70px"></textarea></label></td>
+                <td><label><textarea name="address" style="width: 220px;height: 70px" id="address"></textarea></label></td>
             </tr>
             <tr>
                 <td>Ngày muốn lái thử : </td>
-                <td><label><input type="date" name="date"></label></td>
+                <td><label><input type="date" name="date" id="date"></label></td>
             </tr>
             <tr>
                 <td>Loại xe muốn lái thử : </td>
-                <td><label><select>
-                    <option>-- Loại xe --</option>
+                <td><label><select id="selectCar">
+                    <option></option>
                     <option>BRIO</option>
                     <option>CITY</option>
                     <option>CIVIC</option>
@@ -48,5 +48,6 @@
         </table>
     </form>
 </div>
+<script src="../JS/registration.js"></script>
 </body>
 </html>

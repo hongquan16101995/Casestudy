@@ -1,4 +1,4 @@
-let a = "<h2>HONDA VIỆT NAM – Công ty hàng đầu Việt Nam trong lĩnh vực sản xuất, phân phối xe gắn máy, Ôtô<h2>" +
+let introduce = "<h2>HONDA VIỆT NAM – Công ty hàng đầu Việt Nam trong lĩnh vực sản xuất, phân phối xe gắn máy, Ôtô<h2>" +
     "<br>" +
     "<h3>I. GIỚI THIỆU HONDA VIỆT NAM:<h3>" +
     "<br>" +
@@ -29,5 +29,5 @@ let a = "<h2>HONDA VIỆT NAM – Công ty hàng đầu Việt Nam trong lĩnh v
     "<p>Trân trọng cảm ơn!</p>"
 
 function introduceHonda() {
-    document.getElementById("displayElement").innerHTML = a
+    document.getElementById("displayElement").innerHTML = introduce
 }

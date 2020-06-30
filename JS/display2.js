@@ -20,7 +20,6 @@ function ShowElement (array){
 }
 
 
-
 //danh sách oto
 let car1 = new hondaClass("../car_moto/car1.png", 418000000, "BRIO");
 let car2 = new hondaClass("../car_moto/car2.png", 559000000, "CITY");
@@ -63,6 +62,7 @@ let arrayMotor = [[motor1,motor2,motor3],[motor4,motor5]];
 function showMotor() {
     ShowElement(arrayMotor)
 }
+
 
 //list xe số
 let motorbike1 = new hondaClass("../car_moto/xeso1.png", 30200000, "Future 125FI");
