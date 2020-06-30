@@ -23,7 +23,7 @@ function showCar() {
         for (let j=0;j<arrayCar[i].length;j++){
             content += "<td><img  alt='Lỗi' src=" + arrayCar[i][j].image + "><h2>" + arrayCar[i][j].name +
                 "</h2><p>Giá: " + arrayCar[i][j].price + " VND</p>" +
-                "<button><a href='../HTML/registration.html'>&emsp;Đăng ký lái thử&emsp;</a></button></td>"
+                "<button><a href='registration.html'>&emsp;Đăng ký lái thử&emsp;</a></button></td>"
         }
         content += "</tr>"
     }
