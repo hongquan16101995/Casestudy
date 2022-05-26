@@ -77,7 +77,6 @@ function showMotorbike() {
 //kiểm tra xem đã đăng nhập admin hay chưa?
 function checkAdmin() {
     let username = localStorage.getItem("username")
-    console.log(username)
     let data = ""
     if (username === null) {
         data += "<div id='admin'><a href='login.html'>Đăng nhập</a></div>"

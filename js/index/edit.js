@@ -24,7 +24,7 @@ function renderEdit(text) {
 }
 
 function cancelEdit() {
-    document.getElementById("poster").innerHTML = "<img src=\"../../image/poster1.jpg\" alt=\"Lỗi\" width=\"100%\" height=\"100%\">"
+    document.getElementById("poster").innerHTML = "<img src=\"../image/poster1.jpg\" alt=\"Lỗi\" width=\"100%\" height=\"100%\">"
 }
 
 //edit khi click vào submit form
